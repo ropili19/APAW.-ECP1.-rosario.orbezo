@@ -7,11 +7,15 @@ import singleton.factory.ClientFactory;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ClientFactoryTest {
-    Client client;
+class ClientFactoryTest {
+    private Client client;
+
+    ClientFactoryTest() {
+        client = new Client("1", "rosario","orbezo");
+    }
+
     @BeforeEach
     void before() {
-        client = new Client("1", "rosario","orbezo");
         ClientFactory.getFactory().addClient(client);
     }
 

@@ -8,10 +8,9 @@ import java.util.Map;
 public class ClientFactory {
     private static final ClientFactory factory = new ClientFactory();
     private Map<String, Client> references;
-    private int reference;
+
     private ClientFactory() {
         this.references = new HashMap<>();
-        this.reference = 0;
     }
     public static ClientFactory getFactory() {
         return factory;
