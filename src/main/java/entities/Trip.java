@@ -9,10 +9,16 @@ public class Trip {
     private String destination;
     private LocalDateTime trip_date;
     private List<Client> clients;
-    private List<means_of_transport> meansList;
+    private List<Means_of_transport> meansList;
     private State state;
 
-    public Trip(String id, String origin, String destination, LocalDateTime trip_date, List<Client> clients, List<means_of_transport> meansList, State state) {
+    public Trip(String id, String origin, String destination) {
+        this.id = id;
+        this.origin = origin;
+        this.destination = destination;
+    }
+
+    public Trip(String id, String origin, String destination, LocalDateTime trip_date, List<Client> clients, List<Means_of_transport> meansList, State state) {
         this.id = id;
         this.origin = origin;
         this.destination = destination;
@@ -62,11 +68,11 @@ public class Trip {
         this.clients = clients;
     }
 
-    public List<means_of_transport> getMeansList() {
+    public List<Means_of_transport> getMeansList() {
         return meansList;
     }
 
-    public void setMeansList(List<means_of_transport> meansList) {
+    public void setMeansList(List<Means_of_transport> meansList) {
         this.meansList = meansList;
     }
 
