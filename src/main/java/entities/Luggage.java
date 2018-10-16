@@ -9,6 +9,10 @@ public class Luggage {
         this.ishand_lugagge = ishand_lugagge;
     }
 
+    public Luggage(String id) {
+        this.id = id;
+    }
+
     public String getId() {
         return id;
     }

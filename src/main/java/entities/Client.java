@@ -11,6 +11,11 @@ public class Client {
         this.first_surname = first_surname;
     }
 
+    public Client(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public String getId() {
         return id;
     }

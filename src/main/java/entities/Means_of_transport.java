@@ -1,15 +1,17 @@
 package entities;
 
-public class means_of_transport {
+public class Means_of_transport {
     private String id;
     private int price;
     private String description;
 
-    public means_of_transport(String id, int price, String description) {
+    public Means_of_transport(String id, int price, String description) {
         this.id = id;
         this.price = price;
         this.description = description;
     }
+
+    public Means_of_transport(String id) { this.id = id; }
 
     public String getId() {
         return id;
