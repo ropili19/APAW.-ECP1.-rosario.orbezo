@@ -7,8 +7,6 @@ import entities.Client;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ClientCompositeTest {
@@ -18,7 +16,7 @@ public class ClientCompositeTest {
         private ClientComponent clientComposite;
 
         @BeforeEach
-        public void before() {
+        void before() {
             client = new Client("1","rosario");
             clientleaf = new ClientLeaf(client);
             clientComposite = new ClientComposite("Empleados empresa IECI S.A");
@@ -26,18 +24,18 @@ public class ClientCompositeTest {
         }
 
         @Test
-        public void testIsLeaf() {
+        private void testIsLeaf() {
             assertFalse(clientleaf.isComposite());
 
         }
 
         @Test
-        public void testIsNotLeaf() {
+        void testIsNotLeaf() {
             assertTrue(clientComposite.isComposite());
         }
 
         @Test
-        public void testRemoveClientLeaf() {
+        void testRemoveClientLeaf() {
           ClientComposite  c2 = new ClientComposite("Empleados empresa rab S.A");
           clientComposite.add(c2);
           assertEquals(2,clientComposite.number());
