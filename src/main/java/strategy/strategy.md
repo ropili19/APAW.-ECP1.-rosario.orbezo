@@ -28,3 +28,6 @@ En el ejemplo elaborado el contexto es en una agencia de viajes la impresión de
 dependiendo de si es se viaja por avion, bus o barco la impresión seria distinta (contendría distintos literales)
 Si mañana mas tarde se cambia la impresión de tickets del bus por ejemplo y se añaden campos al texto a imprimir o se eliminan esto no interferiria en el 
 resto de clases concretas , y sería mas sencillo de tratar. 
+
+## Bibliografia
+Libro Patrones de Diseño de Erich GAMMA,Richar Helm, Ralph Johnson y John Vlissides.
