@@ -20,7 +20,6 @@ public class ClientCompositeTest {
         @BeforeEach
         public void before() {
             client = new Client("1","rosario");
-
             clientleaf = new ClientLeaf(client);
             clientComposite = new ClientComposite("Empleados empresa IECI S.A");
             clientComposite.add(clientleaf);
