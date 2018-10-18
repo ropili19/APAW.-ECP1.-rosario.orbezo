@@ -12,6 +12,12 @@ public class ClientLeaf extends ClientComponent{
     public ClientLeaf(Client client) {
         this.client = client;
     }
+
+    @Override
+    public int number() {
+        return 1;
+    }
+
     @Override
     public boolean isComposite() {
         return false;

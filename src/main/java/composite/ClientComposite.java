@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ClientComposite extends ClientComponent {
 
-    List<ClientComponent> clientcomponentsList;
+    private List<ClientComponent> clientcomponentsList;
     private String name;
 
     public ClientComposite(String name) {
@@ -13,6 +13,11 @@ public class ClientComposite extends ClientComponent {
         clientcomponentsList=new ArrayList<>();
     }
 
+
+    @Override
+    public int number() {
+        return this.clientcomponentsList.size();
+    }
 
     @Override
     public boolean isComposite() {
